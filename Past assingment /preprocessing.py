@@ -4,6 +4,7 @@ import scipy.optimize as optimize
 import pandas as pd
 from math import *
 import xlsxwriter
+import gi
 
 # Read data from csv file
 data = pd.read_csv('Assignment1_data.csv', skiprows=4)

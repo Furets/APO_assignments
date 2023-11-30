@@ -23,10 +23,10 @@ q = np.array(data_demand)[::,1::]  # Demand (matrix) between airports i and j
 demand = q
 
 # Airports
-Airports = ['ESGG', 'ESMS', 'ESPA', 'ESSA', 'ESFR', 'ESDF', 'ESIB', 'SE-0016', 'ESNS', 'ESGR', 'ESNY', 'ESKN', 'ESNB', 'ESCM', 'ESGO']
+Airports = ["LIMC", "EDDF", "RJAA", "KJFK", "SBGL", "CYVR", "LEMD", "CYYZ", "ZBAA", "LTFM", "SAEZ", "ZSPD", "EDDM", "LFPG", "VIDP", "OMDB", "EDDT", "MMMX", "EFHK", "EBBR", "EGPH", "LKPR", "FACT", "LGAV", "BIKF", "ESSA", "EIDW", "LPPT", "EETN", "LFQQ", "EFRO", "LDZA", "EHEH"]
 airports = range(len(Airports))
 
-runway_lengths = [3299, 2800, 3350, 3301, 1987, 2331, 2264, 2500, 2520, 1736, 2524, 2878, 820, 1963, 890]
+runway_lengths = [3920, 3400, 4000, 4423, 4000, 3293, 3600, 3389, 3800, 4100, 2851, 4000, 2800, 3100, 4400, 4447, 2900, 3900, 2700, 3638, 2200, 3250, 3200, 3800, 1800, 2700, 2600, 2600, 3480, 2845, 3000, 3252, 3000]
 
 # Creating matrix with max runway length between origin and destination
 runways = np.zeros((len(runway_lengths), len(runway_lengths)))
